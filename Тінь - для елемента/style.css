@@ -1,0 +1,98 @@
+/* звичайна - горизонталь та вертикаль */
+.item-1 {
+    width: 300px;
+    height: 100px;
+    padding: 15px;
+    background-color: coral;
+    box-shadow: 10px 10px; 
+}
+
+/* горизонталь, вертикаль + колір */
+.item-2 {
+    width: 300px;
+    height: 100px;
+    padding: 15px;
+    background-color: coral;
+    box-shadow: 10px 10px lightblue; 
+}
+
+/* з ефектом розмиття */
+.item-3 {
+    width: 300px;
+    height: 100px;
+    padding: 15px;
+    background-color: coral;
+    box-shadow: 10px 10px 5px lightblue; 
+}
+
+/* четверте значення - збільшення або зменшення тіні по усьому периметру */
+.item-4 {
+    width: 300px;
+    height: 100px;
+    padding: 15px;
+    background-color: coral;
+    box-shadow: 10px 10px 5px 28px lightblue; 
+}
+
+/* вставний параметр - inset. повна какашка, краще використовувати мінусові значення для горизонталі та вертикалі */
+.item-5 {
+    width: 300px;
+    height: 100px;
+    padding: 15px;
+    background-color: coral;
+    box-shadow: 10px 10px 5px lightblue inset; 
+}
+
+/* використовуємо мінусові значення для горизонталі та вертикалі для того щоб кардинально у іншу сторону змінити розташування тіні */
+.item-6 {
+    width: 300px;
+    height: 100px;
+    padding: 15px;
+    background-color: coral;
+    box-shadow: -5px -5px 5px lightblue; 
+}
+
+/* декілька тіней одночасно. варіант-1 */
+.item-7 {
+    border: 1px solid;
+    padding: 10px;
+    box-shadow: 5px 5px blue, 10px 10px red, 15px 15px green;
+    margin: 20px;
+}
+
+/* декілька тіней одночасно. варіант-2 */
+.item-8 {
+    border: 1px solid;
+    padding: 10px;
+    box-shadow: 5px 5px 8px blue, 10px 10px 8px red, 15px 15px 8px green;
+    margin: 20px;
+}
+
+/* картка з текстовим контентом */
+div.card {
+    width: 350px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+}
+  
+div.header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    font-size: 40px;
+}
+  
+div.container {
+    padding: 10px;
+}
+
+/* картка з імеджем та тінню */
+div.rams {
+    width: 350px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+}
+  
+div.container-1 {
+    padding: 10px;
+}

@@ -1,0 +1,20 @@
+body {
+    background-color: tan;
+    color: black;
+}
+  
+/* На екранах із шириною 992 пікселів або менше фоновий колір синій */
+@media screen and (max-width: 992px) { /* найтиповіші контрольні точки */
+    body {
+      background-color: blue;
+      color: white;
+    }
+}
+  
+/* На екранах шириною 600 пікселів або менше фоновий колір оливковий */
+@media screen and (max-width: 600px) { /* найтиповіші контрольні точки */
+    body {
+      background-color: olive;
+      color: white;
+    }
+}

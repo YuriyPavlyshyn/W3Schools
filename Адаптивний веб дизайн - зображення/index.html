@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Адаптивний веб дизайн - зображення</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="box">
+        <picture> <!-- обгортка (основа) для зображення -->
+            <source srcset="./img/birds-8106126_640.jpg" media="(max-width: 600px)"> <!-- тут ми задаємо srcset для зображення яке буде відображатися при виконанні медіа запиту -->
+            <source srcset="./img/animals-2675484_640.jpg"> <!-- атрибут srcset обов’язковий і визначає джерело зображення -->
+            <img src="./img/animals-2675484_640.jpg" width="500" height="700"> <!-- тут вказуємо img для браузерів які не підтримують picture -->
+        </picture>
+        <p>Resize the browser window to see how the image will scale.</p>
+    </div>
+</body>
+</html>

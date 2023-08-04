@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Маскування (підставлення фону під прозорі зображення)</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- перший приклад -->
+    <div class="mask1">
+        <img src="./img/sea-2693736_640.jpg" alt="sea" width="400" height="640">
+    </div>
+</body>
+</html>
+    <br>
+    <br>
+
+    <!-- другий приклад -->
+    <div class="mask2">
+        <p>The Cinque Terre is a coastal area within Liguria, in the northwest of Italy. It lies in the west of La Spezia Province, and comprises five villages: Monterosso al Mare, Vernazza, Corniglia, Manarola, and Riomaggiore.</p>
+    
+        <p>The Cinque Terre is a coastal area within Liguria, in the northwest of Italy. It lies in the west of La Spezia Province, and comprises five villages: Monterosso al Mare, Vernazza, Corniglia, Manarola, and Riomaggiore.</p>
+    
+        <p>The Cinque Terre is a coastal area within Liguria, in the northwest of Italy. It lies in the west of La Spezia Province, and comprises five villages: Monterosso al Mare, Vernazza, Corniglia, Manarola, and Riomaggiore.</p>
+    </div>
+    <br>
+    <br>
+
+    <!-- третій приклад -->
+    <div class="mask3">
+        <img src="./img/sea-2693736_640.jpg" alt="Cinque Terre" width="600" height="400">
+    </div>
+    <br>
+    <br>
+
+    <!-- четвертий приклад -->
+    <div class="mask4">
+        <img src="./img/sea-2693736_640.jpg" alt="Cinque Terre" width="600" height="400">
+    </div>
+    <br>
+    <br>
+
+    <!-- пятий приклад -->
+    <svg width="600" height="400">
+        <mask id="svgmask1">
+            <polygon fill="#ffffff" points="150 0, 300 300, 0 300"></polygon>
+        </mask>
+        <image xmlns:xlink="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiFR5ESv7uiY0L8b480kjFfzJMC774WCsKdg&usqp=CAU" xlink:href="./img/images.jpg" mask="url(#svgmask1)"></image>
+        <!-- тут вказуємо лінку де зберігається оригінал зображення (абсолютний шлях) та після цього вказуємо на його локальне місце знаходження (відносний шлях). перед цим зберігаємо копію зображення на локальний поточний компютер -->
+    </svg>
+    <br>
+    <br>
+
+    <!-- шостий приклад -->
+    <svg width="600" height="400">
+        <mask id="svgmask2">
+          <polygon fill="#ffffff" points="130,30 70,218 220,108 40,108 190,218"></polygon>
+        </mask>
+        <image xmlns:xlink="https://cdn.pixabay.com/photo/2019/04/04/17/58/road-4103334_1280.jpg" xlink:href="./img/road-4103334_640.jpg" mask="url(#svgmask2)"></image>
+    </svg>
+
+    <!-- сьомий приклад -->
+    <svg width="600" height="400">
+        <mask id="svgmask3">
+          <circle fill="#ffffff" cx="75" cy="75" r="75"></circle>
+          <circle fill="#ffffff" cx="80" cy="260" r="75"></circle>
+          <circle fill="#ffffff" cx="270" cy="160" r="75"></circle>
+        </mask>
+        <image xmlns:xlink="https://cdn.pixabay.com/photo/2019/04/04/17/58/road-4103334_1280.jpg" xlink:href="./img/road-4103334_640.jpg" mask="url(#svgmask3)"></image>
+    </svg>
+      
+
+        
+

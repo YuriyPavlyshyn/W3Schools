@@ -1,0 +1,42 @@
+/* У наступному прикладі створюється лічильник для сторінки (у селекторі body), потім збільшується значення лічильника для кожного елемента <h2> і додається «Розділ < значення лічильника >:» на початок кожного елемента <h2>: */
+
+/* body {
+    counter-reset: section;
+}
+  
+h2::before {
+    counter-increment: section;
+    content: "Section " counter(section) ": ";
+} */
+
+/* У наступному прикладі створюється один лічильник для сторінки (розділу) і один лічильник для кожного елемента <h1> (підрозділу). Лічильник «розділ» буде підраховано для кожного елемента <h1> з «Розділ < значення лічильника розділу >.», а лічильник «підрозділ» буде підраховано для кожного елемента <h2> з «< значення лічильника розділу >.< значення лічильника підрозділу >": */
+
+/* body {
+    counter-reset: section;
+}
+  
+h1 {
+    counter-reset: subsection;
+}
+  
+h1::before {
+    counter-increment: section;
+    content: "Section " counter(section) ". ";
+}
+  
+h2::before {
+    counter-increment: subsection;
+    content: counter(section) "." counter(subsection) " ";
+} */
+
+/* OСЬ ЦЕ ТОЧНО ПРИГОДИТЬСЯ: (нумерування підгрупами) */
+
+ol {
+    counter-reset: section;
+    list-style-type: none;
+}
+  
+li::before {
+    counter-increment: section;
+    content: counters(section,".") " ";
+}

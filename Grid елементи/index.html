@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid елементи</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<br>
+<hr>
+<br>
+    <h1>Макет сітки з п’яти елементів</h1>
+<p>Прямі дочірні елементи контейнера сітки автоматично стають елементами сітки.</p>
+<p>Елемент 1, 2 і 5 налаштовано на охоплення кількох стовпців або рядків.</p>
+
+<!-- Дочірні елементи (предмети)
+Контейнер сітки містить елементи сітки .
+За замовчуванням контейнер має один елемент сітки для кожного стовпця в кожному рядку, але ви можете налаштувати елементи сітки так, щоб вони охоплювали кілька стовпців і/або рядків. -->
+
+<!-- Властивість grid-column:
+Властивість grid-column визначає, у якому стовпці(-ах) розмістити елемент.
+Ви визначаєте, де елемент буде починатися і де елемент закінчуватиметься. -->
+<!-- Примітка. Властивість grid-columnє скороченою властивістю для властивостей grid-column-startі grid-column-end.
+Щоб розмістити елемент, ви можете звернутися до номерів рядків або використати ключове слово "span", щоб визначити, скільки стовпців охоплюватиме елемент. -->
+
+<!-- Властивість grid-row:
+Властивість grid-rowвизначає, у якому рядку розмістити елемент.
+Ви визначаєте, де елемент буде починатися і де елемент закінчуватиметься.
+Примітка. Властивість grid-rowє скороченою властивістю для властивостей grid-row-startі grid-row-end. -->
+
+<!-- !!!!! Якщо ми вказуємо значення: 1 / 5, це означатиме що елемент займе з 1-ї по 4-ту колонку, або рядок - включно. Якщо ж ми вказуватимемо наступне значення: 1 / span 5, це означатиме що елемент займе з 1-ї по 5-ту колонку, або рядок - включно. -->
+
+<div class="grid-container">
+    <div class="grid-item item1">1</div>
+    <div class="grid-item item2">2</div>
+    <div class="grid-item item3">3</div>  
+    <div class="grid-item item4">4</div>
+    <div class="grid-item item5">5</div>
+</div>
+    <br>
+    <hr>
+    <br>
+
+    Властивість grid-area
+<!-- Властивість grid-areaможна використовувати як скорочену властивість для grid-row-start, grid-column-startі grid-row-endвластивостей grid-column-end. -->
+<p>Синтаксис grid-area:</p>
+<p>grid-row-start / grid-column-start / grid-row-end / grid-column-end.</p>
+
+<p>Пункт 8 розпочнеться в рядку 1 і стовпці 2 і закінчиться в рядку 5, стовпці, рядку 6:</p>
+
+<div class="grid-container-1">
+    <div class="item-1">1</div>
+    <div class="item-2">2</div>
+    <div class="item-3">3</div>  
+    <div class="item-4">4</div>
+    <div class="item-5">5</div>
+    <div class="item-6">6</div>
+    <div class="item-7">7</div>
+    <div class="item-8">8</div>  
+    <div class="item-9">9</div>
+    <div class="item-10">10</div>
+    <div class="item-11">11</div>
+    <div class="item-12">12</div>
+    <div class="item-13">13</div>
+    <div class="item-14">14</div>
+    <div class="item-15">15</div>
+</div>
+    <br>
+    <hr>
+    <br>
+
+    Назви елементів сітки - grid-template-areas
+<!-- Властивість grid-area також можна використовувати для призначення імен елементам сітки. На іменовані елементи сітки можна посилатися за властивістю grid-template-areas контейнера сітки. -->
+<p>Ви можете використовувати властивість <em>grid-area</em> для іменування елементів сітки</p>
+<p>Ви можете посилатися на назву під час налаштування макета сітки за допомогою властивості <em>grid-template-areas</em> у контейнері сітки.</p>
+<p>Елемент 1 називається «myArea» і займатиме місце всіх п’яти стовпців:</p>
+<!-- Кожен рядок позначається апострофами (' ')
+Стовпці в кожному рядку визначені всередині апострофів, розділених пробілом.
+Примітка. Знак крапки позначає елемент сітки без імені. -->
+
+<div class="grid-container-2">
+    <div class="items1">1</div>
+    <div class="items2">2</div>
+    <div class="items3">3</div>  
+    <div class="items4">4</div>
+    <div class="items5">5</div>
+    <div class="items6">6</div>
+</div>
+    <br>
+    <hr>
+    <br>
+
+    Примітка. Знак крапки позначає елемент сітки без імені.
+<p>Ви можете використовувати властивість <em>grid-area</em> для іменування елементів сітки.</p>
+<p>Ви можете посилатися на назву під час налаштування макета сітки за допомогою властивості <em>grid-template-areas</em> у контейнері сітки.</p>
+<p>Елемент 1 називається «myArea» і займатиме місце двох стовпців (з п’яти):</p>
+
+<div class="grid-container-3">
+    <div class="item_1">1</div>
+    <div class="item_2">2</div>
+    <div class="item_3">3</div>  
+    <div class="item_4">4</div>
+    <div class="item_5">5</div>
+    <div class="item_6">6</div>
+    <div class="item_7">7</div>
+    <div class="item_8">8</div>
+    <div class="item_9">9</div>
+</div>
+    <br>
+    <hr>
+    <br>
+</body>
+</html>

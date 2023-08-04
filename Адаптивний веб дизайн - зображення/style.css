@@ -1,0 +1,34 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(./img/grain-8108617_1280.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.box {
+    width: 50%;
+    border: 4px solid rgb(30, 194, 66);
+    /* line-height: 0; */ /* застосовуємо для видалення нижньої білої прогалини під зображенням */
+}
+
+img {
+    vertical-align: bottom; /* застосовуємо для видалення нижньої білої прогалини під зображенням */
+    /* display: block; */ /* застосовуємо для видалення нижньої білої прогалини під зображенням */
+    width: 100%; /* для автоматичного масштабування зображення при різних розмірах екрану */
+    height: auto; /* для автоматичного масштабування зображення при різних розмірах екрану */
+    object-fit: cover;
+    object-position: center;
+    overflow: hidden;
+    max-width: 100%; /* Якщо max-width властивість встановлена ​​на 100%, зображення буде зменшено, якщо потрібно, але ніколи не буде масштабовано до розміру, що перевищує початковий розмір */
+}
+
+p {
+    background-color: bisque;
+    padding: 30px;
+}

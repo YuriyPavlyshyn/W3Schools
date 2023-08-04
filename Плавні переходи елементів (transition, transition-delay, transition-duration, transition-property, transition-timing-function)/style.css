@@ -1,0 +1,89 @@
+/* плавна зміна ширини обєкту при ховері */
+
+.item-1 {
+    width: 100px;
+    height: 100px;
+    background: red;
+    transition: width 2s;
+}
+  
+.item-1:hover {
+    width: 300px;
+}
+
+/* плавна зміна ширини та висоти обєкту при ховері (нотатка: зміни відбуваються не одночасно по обох осях, а по порядку, спочатку змінюється основна - горизонтальна ось, а вже після цього додаткова вертикальна) */
+.item-2 {
+    width: 100px;
+    height: 100px;
+    background: red;
+    transition: width 2s, height 4s;
+}
+  
+.item-2:hover {
+    height: 300px;
+    width: 300px;
+}
+
+/* крива швидкості переходу, фактично різні стилі поведінки при переході */
+.transition {
+    width: 100px;
+    height: 100px;
+    background: red;
+    transition: width 2s;
+}
+
+.item-3 {transition-timing-function: linear;}
+.item-4 {transition-timing-function: ease;}
+.item-5 {transition-timing-function: ease-in;}
+.item-6 {transition-timing-function: ease-out;}
+.item-7 {transition-timing-function: ease-in-out;}
+
+.transition:hover {
+  width: 300px;
+}
+
+/* задання ефекту затримки перед виконанням фактичного переходу елемента у інший стан при ховері */
+.item-8 {
+    width: 100px;
+    height: 100px;
+    background: red;
+    transition: width 3s;
+    transition-delay: 3s; /* тут задаємо затримку */
+  }
+  
+.item-8:hover {
+    width: 300px;
+}
+
+/* класний ефект з одночасною зміною декількох значень властивостей */
+.item-9 {
+    width: 100px;
+    height: 100px;
+    background: red;
+    transition: width 2s, height 2s, transform 2s;
+}
+  
+.item-9:hover {
+    width: 300px;
+    height: 300px;
+    transform: rotate(180deg);
+}
+
+/* існує скорочена версія задання властивостей та значень для переходів:
+    Повна:
+    transition-property: width;
+    transition-duration: 2s;
+    transition-timing-function: linear;
+    transition-delay: 1s;
+    Коротка:
+    transition: width 2s linear 1s; */
+.item-10 {
+    width: 100px;
+    height: 100px;
+    background: red;
+    transition: width 2s linear 1s;
+}
+  
+.item-10:hover {
+    width: 300px;
+}

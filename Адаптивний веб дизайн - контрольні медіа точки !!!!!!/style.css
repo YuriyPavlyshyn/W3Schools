@@ -1,0 +1,40 @@
+.example {
+    height: 100vh;
+    padding: 20px;
+    color: white;
+}
+
+/* Надмалі пристрої (телефони, 600 пікселів і менше) */
+@media only screen and (max-width: 600px) {
+    .example {
+        background: red;
+    }
+}
+  
+/* Малі пристрої (планшети та великі телефони з вертикальною орієнтацією, 600 пікселів і більше) */
+@media only screen and (min-width: 600px) {
+    .example {
+        background: green;
+    }
+}
+  
+/* Середні пристрої (планшети в альбомній орієнтації, 768 пікселів і більше) */
+@media only screen and (min-width: 768px) {
+    .example {
+        background: blue;
+    }
+} 
+  
+/* Великі пристрої (ноутбуки/настільні комп’ютери, 992px і більше) */
+@media only screen and (min-width: 992px) {
+    .example {
+        background: orange;
+    }
+} 
+  
+/* Дуже великі пристрої (великі ноутбуки та настільні ПК, 1200 пікселів і більше) */
+@media only screen and (min-width: 1200px) {
+    .example {
+        background: pink;
+    }
+}

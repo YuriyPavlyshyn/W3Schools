@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex box властивості гнучкого контейнера</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Властивості гнучкого елемента:
+    order
+    flex-grow
+    flex-shrink
+    flex-basis
+    flex
+    align-self -->
+
+    <!-- Прямі дочірні елементи гнучкого контейнера автоматично стають гнучкими (гнучкими) елементами. -->
+
+
+<!-- Перший елемент flex у коді не обов’язково повинен відображатися як перший елемент у макеті.
+
+Значення замовлення має бути числом, значення за замовчуванням – 0. -->
+    <br>
+    <hr>
+    <br>
+    Order - порядок розміщення флекс елементів. Першим по порядку йде елемент з "0", чим вище значення order тим пізніше по порядку буде знаходитись елемент
+    <div class="flex-container">
+        <div style="order: 3">1</div>
+        <div style="order: 2">2</div>
+        <div style="order: 4">3</div> 
+        <div style="order: 1">4</div>
+    </div>
+    <br>
+    <hr>
+    <br>
+    flex-grow - значення даної властивості це визначення скільки вільного простору будуть займати кожен із елементів один по відношенню до іншого
+    <div class="flex-container-1">
+        <div style="flex-grow: 1">1</div>
+        <div style="flex-grow: 1">2</div>
+        <div style="flex-grow: 2">3</div>
+    </div>
+    <!-- Значення має бути числом, значення за замовчуванням – 0. -->
+    <br>
+    <hr>
+    <br>
+    flex-shrink - значення даної властивості це визначення скільки вільного простору будуть віддавати кожен із елементів один по відношенню до іншого. У цьому випадку зміни буде видно при зменшенні розширення екрану, або при наявності великої кількості елементів
+    <div class="flex-container-2">
+        <div>1</div>
+        <div>2</div>
+        <div style="flex-shrink: 4">3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+        <div>11</div>
+        <div>12</div>
+        <div>13</div>
+        <div>14</div>
+        <div>15</div>
+        <div>16</div>
+        <div>17</div>
+    </div>
+    <!-- Значення має бути числом, значення за замовчуванням – 1. -->
+    <br>
+    <hr>
+    <br>
+    Властивість flex-basis визначає початкову довжину елемента flex.
+    <div class="flex-container-2">
+        <div style="flex-basis:200px">1</div>
+        <div>2</div>
+        <div style="flex-basis:600px">3</div>
+        <div>4</div>
+    </div>
+    <br>
+    <hr>
+    <br>
+    Властивість flexє скороченою властивістю для властивостей flex-grow, flex-shrink і flex-basis.
+    <div class="flex-container-3">
+        <div style="flex: 0 0 0px">1</div>
+        <div style="flex: 2 2 200px">2</div>
+        <div style="flex: 1 1 200px">3</div>
+        <div style="flex: 0 0 0px">4</div>
+    </div>
+    <br>
+    <hr>
+    <br>
+    Властивість align-selfвизначає вирівнювання для вибраного елемента всередині гнучкого контейнера.
+    Властивість align-self замінює стандартне вирівнювання, встановлене властивістю контейнера align-items.
+    <div class="flex-container-4">
+        <div style="align-self: center">1</div>
+        <div style="align-self: flex-end">2</div>
+        <div style="align-self: flex-start">3</div>
+        <div style="align-self: stretch">4</div>
+    </div>
+    <br>
+    <hr>
+    <br>
+</body>
+</html>

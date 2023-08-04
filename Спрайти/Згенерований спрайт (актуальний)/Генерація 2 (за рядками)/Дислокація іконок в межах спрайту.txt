@@ -1,0 +1,77 @@
+.sprite {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-free-icon-chrome-232416-50px {
+    width: 50px;
+    height: 50px;
+    background-position: -5px -5px;
+}
+
+.sprite-free-icon-facebook-2504903-50px {
+    width: 50px;
+    height: 50px;
+    background-position: -65px -5px;
+}
+
+.sprite-free-icon-facebook-messenger-2504926-50px {
+    width: 50px;
+    height: 50px;
+    background-position: -125px -5px;
+}
+
+.sprite-free-icon-gmail-270021-50px {
+    width: 50px;
+    height: 50px;
+    background-position: -5px -65px;
+}
+
+.sprite-free-icon-instagram-1409946-50px {
+    width: 50px;
+    height: 50px;
+    background-position: -65px -65px;
+}
+
+.sprite-free-icon-linkedin-2504923-50px {
+    width: 50px;
+    height: 50px;
+    background-position: -125px -65px;
+}
+
+.sprite-free-icon-sharethis-1532524-50px {
+    width: 50px;
+    height: 50px;
+    background-position: -5px -125px;
+}
+
+.sprite-free-icon-skype-2504937-50px {
+    width: 50px;
+    height: 50px;
+    background-position: -65px -125px;
+}
+
+.sprite-free-icon-twitter-3955032-50px {
+    width: 50px;
+    height: 50px;
+    background-position: -125px -125px;
+}
+
+.sprite-free-icon-viber-2504948-50px {
+    width: 50px;
+    height: 50px;
+    background-position: -185px -5px;
+}
+
+.sprite-free-icon-whatsapp-2504957-50px {
+    width: 50px;
+    height: 50px;
+    background-position: -185px -65px;
+}
+
+.sprite-free-icon-youtube-2504965-50px {
+    width: 50px;
+    height: 50px;
+    background-position: -185px -125px;
+}

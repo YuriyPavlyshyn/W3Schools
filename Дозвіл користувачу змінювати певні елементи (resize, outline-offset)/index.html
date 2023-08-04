@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Дозвіл користувачу змінювати певні елементи (resize, outline-offset)</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <br>
+    <hr>
+    <br>
+    <!-- дозвіл користувачу змінювати елемент лише по горизонталі -->
+    <div class="item-1">
+        <p>Let the user resize only the width of this div element.</p>
+        <p>To resize: Click and drag the bottom right corner of this div element.</p>
+    </div>
+    <br>
+    <hr>
+    <br>
+    <!-- дозвіл користувачу змінювати елемент лише по горизонталі -->
+    <div class="item-2">
+        <p>Let the user resize only the width of this div element.</p>
+        <p>To resize: Click and drag the bottom right corner of this div element.</p>
+    </div>
+    <br>
+    <hr>
+    <br>
+    <!-- дозвіл користувачу змінювати елемент і по горизонталі, і по вертикалі-->
+    <div class="item-3">
+        <p>Let the user resize only the width of this div element.</p>
+        <p>To resize: Click and drag the bottom right corner of this div element.</p>
+    </div>
+    <br>
+    <hr>
+    <br>
+    <!-- вимикаємо дозвіл на зміну елементу -->
+    <div class="item-4">
+        <p>Let the user resize only the width of this div element.</p>
+        <p>To resize: Click and drag the bottom right corner of this div element.</p>
+    </div>
+    <br>
+    <hr>
+    <br>
+
+    <!-- наступні приклади - це задання розміру для outline, щось типу такого самого як padding для елемента -->
+    <!-- Контур (outline) відрізняється від рамок! На відміну від рамки, контур малюється за межами елемента та може перекривати інший вміст. Крім того, контур НЕ є частиною розмірів елемента; ширина контуру не впливає на загальну ширину та висоту елемента. -->
+    <div class="ex1">This div has a 4 pixels solid red outline 15 pixels outside the border edge.</div>
+    <br>
+
+    <div class="ex2">This div has a 5 pixels dashed blue outline 5 pixels outside the border edge.</div>
+    <br>
+    <hr>
+    <br>
+</body>
+</html>

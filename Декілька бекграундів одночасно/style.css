@@ -1,0 +1,120 @@
+/* Перший варіант (розширені властивості) */
+#example1 {
+    background-image: url(./img/mini.png), url(./img/pink-floral-background-3814685_1280.jpg);
+    background-position: right bottom, left top;
+    background-repeat: no-repeat, repeat;
+    padding: 15px;
+}
+
+/* <!-- Другий варіант (скорочені властивості) --> */
+#example2 {
+    background: url(./img/mini.png) right bottom no-repeat, url(./img/pink-floral-background-3814685_1280.jpg) left top repeat;
+    padding: 15px;
+}
+
+/* Третій варіант (задаємо розмір бекграунда) */
+#example3 {
+    border: 1px solid black;
+    background: url(./img/mini.png) right center;
+    background-size: 100px 80px;
+    background-repeat: no-repeat;
+    padding: 15px;
+}
+  
+  #example4 {
+    width: 90vw;
+    height: 50vh;
+    border: 1px solid black;
+    background: url(./img/mini.png) center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 15px;
+}
+
+/* Четвертий варіант (задаємо розмір бекграунда однією властивістю одразу декільком елементам - фонам) */
+#example5 {
+    background: url(./img/mini.png) left top no-repeat, url(./img/mini.png) right bottom no-repeat, url(./img/pink-floral-background-3814685_1280.jpg) left top repeat;
+    padding: 15px;
+    background-size: 50px, 130px, auto;
+  }
+
+/* Пятий варіант (покриваємо фоном весь вюпорт із фіксацією) */
+#example6 {
+    background: url(./img/результат.png) no-repeat center fixed; 
+    background-size: cover;
+    color: white; 
+}
+
+/* Шостий варіант (через дів із позиціонуванням) */
+.hero-image {
+    background: url(./img/результат.png) no-repeat center; 
+    background-size: cover;
+    height: 500px;
+    position: relative;
+  }
+  
+  .hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  /* Різні варіанти background-origin */
+  #example7 {
+    border: 10px solid black;
+    padding: 35px;
+    background: url(./img/результат.png);
+    background-repeat: no-repeat;
+  }
+  
+  #example8 {
+    border: 10px solid black;
+    padding: 35px;
+    background: url(./img/результат.png);
+    background-repeat: no-repeat;
+    background-origin: border-box;
+  }
+  
+  #example9 {
+    border: 10px solid black;
+    padding: 35px;
+    background: url(./img/результат.png);
+    background-repeat: no-repeat;
+    background-origin: content-box;
+  }
+
+  /* Різні варіанти background-clip */
+  #example10 {
+    border: 10px dotted black;
+    padding: 35px;
+    background: yellow;
+  }
+  
+  #example11 {
+    border: 10px dotted black;
+    padding: 35px;
+    background: yellow;
+    background-clip: padding-box;
+  }
+  
+  #example12 {
+    border: 10px dotted black;
+    padding: 35px;
+    background: yellow;
+    background-clip: content-box;
+  }
+
+  .wraper {
+    padding: 20px;
+    background-color: blueviolet;
+  }
+
+  .transparent {
+    color: white;
+    padding: 20px;
+    border: 10px solid currentcolor;
+  }

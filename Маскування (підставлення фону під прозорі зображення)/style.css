@@ -1,0 +1,41 @@
+/* перший приклад */
+.mask1 {
+    -webkit-mask-image: linear-gradient(black, transparent);
+    mask-image: linear-gradient(black, transparent);
+}
+
+/* другий приклад */
+p {
+    font-size: 25px;
+    padding: 20px;
+    color: white;
+    word-wrap: break-word;
+    word-break: keep-all;
+}
+
+.mask2 {
+    width: 50%;
+    height: auto;
+    
+    overflow: auto;
+    background: url(./img/sea-2693736_640.jpg) no-repeat;
+    background-size: cover;
+    -webkit-mask-image: linear-gradient(black, transparent);
+    mask-image: linear-gradient(black, transparent);
+}
+
+/* третій приклад */
+.mask3 {
+    width: 50vw;
+    -webkit-mask-image: radial-gradient(circle, black 50%, rgba(0, 0, 0, 0.5) 50%);
+    mask-image: radial-gradient(circle, black 50%, rgba(0, 0, 0, 0.5) 50%);
+}
+
+/* четвертий приклад */
+.mask4 {
+    width: 50vw;
+    -webkit-mask-image: radial-gradient(ellipse, black 50%, rgba(0, 0, 0, 0.5) 50%);
+    mask-image: radial-gradient(ellipse, black 50%, rgba(0, 0, 0, 0.5) 50%);
+}
+
+/* пятий приклад */

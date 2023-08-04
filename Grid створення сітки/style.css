@@ -1,0 +1,127 @@
+/* перша сітка */
+.item1 { grid-area: header; }
+.item2 { grid-area: menu; }
+.item3 { grid-area: main; }
+.item4 { grid-area: right; }
+.item5 { grid-area: footer; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'menu main main main right right'
+    'menu footer footer footer footer footer';
+  gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+/* друга сітка */
+.grid-container-1 {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: #2196F3;
+    padding: 10px;
+}
+
+.grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+
+/* третя сітка */
+.grid-container-2 {
+    display: inline-grid;
+    grid-template-columns: auto auto auto;
+    background-color: #2196F3;
+    padding: 10px;
+}
+  
+.grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+
+/* четверта сітка із використанням горизонтальних та вертикальних розривів */
+.grid-container-3 {
+    display: grid;
+    column-gap: 100px;
+    row-gap: 100px;
+    /* gap: 50px 100px; скорочена версія, що включає у себе дві властивості: column-gap та row-gap. перше значення це розрив між рядками, друге значення це розрив між стовпцями */
+    grid-template-columns: auto auto auto;
+    background-color: #2196F3;
+    padding: 10px;
+}
+  
+.grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+
+/* пята сітка із зверненням до колонок для побудови лейауту (звертаємось не до контейнера, а до елементів сітки окремо та індивідуально) */
+.grid-container-4 {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
+    background-color: #2196F3;
+    padding: 10px;
+  }
+  
+.grid-container-4 > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+}
+  
+.item-1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+  
+.item-7 {
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+  
+.item-8 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+/* шоста сітка із зверненням до рядків для побудови лейауту (звертаємось не до контейнера, а до елементів сітки окремо та індивідуально) */
+.grid-container-5 {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
+    background-color: #2196F3;
+    padding: 10px;
+}
+  
+.grid-container-5 > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+}
+  
+.item11 {
+    grid-row-start: 1;
+    grid-row-end: 3;
+}

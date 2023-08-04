@@ -1,0 +1,73 @@
+.box {
+    display: flex;
+    flex-direction: column;
+}
+
+.item-1 {
+    width: 680px; /* розмір оригіналу */
+    height: 500px; /* розмір оригіналу */
+    
+}
+
+.item-2 {
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+    object-position: left;
+}
+
+.item-3 {
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+    object-position: right;
+}
+
+.item-4 {
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.item-5 {
+    width: 300px;
+    height: 100px;
+    object-fit: cover;
+    object-position: top;
+}
+
+.item-6 {
+    width: 300px;
+    height: 100px;
+    object-fit: cover;
+    object-position: bottom;
+}
+
+.item-7 {
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+    object-position: 15% 100%;
+}
+
+.item-8 {
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+    object-position: 30% 100%;
+}
+
+.item-9 {
+    width: 300px;
+    height: 100px;
+    object-fit: cover;
+    object-position: 100% 30%;
+}
+
+.item-10 {
+    width: 300px;
+    height: 100px;
+    object-fit: cover;
+    object-position: 100% 15%;
+}

@@ -1,0 +1,149 @@
+/* підсказка з правої сторони */
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+  
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    top: -5px;
+    left: 105%;
+    /* ліва підсказка:
+    top: -5px;
+    right: 105%;
+    */
+
+}
+  
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+/* підсказка зверху та знизу */
+.tooltip1 {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+  
+.tooltip1 .tooltiptext1 {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    bottom: 100%; /* верхня підсказка */
+    /* top: 100%; - нижня підсказка*/
+
+    left: 50%;
+    margin-left: -60px;
+}
+  
+.tooltip1:hover .tooltiptext1 {
+    visibility: visible;
+}
+
+/* підсказка з псевдокласом "стрілочкою" */
+.tooltip2 {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+  
+.tooltip2 .tooltiptext2 {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 150%;
+    /* нижня підсказка:
+    top: 150%; */
+    left: 50%;
+    margin-left: -60px;
+}
+  
+.tooltip2 .tooltiptext2::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+    /* стрілка підсказки з низу:
+    border-color: transparent transparent black transparent; */
+}
+  
+.tooltip2:hover .tooltiptext2 {
+    visibility: visible;
+}
+
+/* підсказка з псевдокласом "стрілочкою" праворуч та ліворуч */
+.tooltip3 {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+  
+.tooltip3 .tooltiptext3 {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: -5px;
+    left: 110%; /* пісказка праворуч */
+    /* right: 110%; - підсказка ліворуч */
+}
+  
+.tooltip3 .tooltiptext3::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent black transparent transparent;
+    /* transparent transparent transparent black; - підсказка праворуч */
+}
+
+.tooltip3:hover .tooltiptext3 {
+    visibility: visible;
+}
+
+/* Можна застосувати планість переходу:
+    ... (безпосередньо до елементів)
+    opacity: 0;
+    transition: opacity 1s;
+
+    (змінюємо значення для ховера)
+    .tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+*/

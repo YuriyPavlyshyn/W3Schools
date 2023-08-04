@@ -1,0 +1,49 @@
+/* дозвіл користувачу змінювати елемент лише по горизонталі */
+.item-1 {
+    border: 2px solid;
+    padding: 20px; 
+    width: 300px;
+    resize: horizontal; /* дозволяємо користувачу змінювати даний елемент по горизонталі */
+    resize: horizontal;
+    overflow: auto;
+}
+
+.item-2 {
+    border: 2px solid;
+    padding: 20px; 
+    width: 300px;
+    resize: vertical; /* дозволяємо користувачу змінювати даний елемент по вертикалі */
+    overflow: auto;
+}
+
+.item-3 {
+    border: 2px solid;
+    padding: 20px; 
+    width: 300px;
+    resize: both; /* дозволяємо користувачу змінювати даний елемент і по вертикалі, і по вертикалі */
+    overflow: auto;
+}
+
+/* вимикаємо дозвіл на зміну елементу */
+.item-4 {
+    border: 2px solid;
+    padding: 20px; 
+    width: 300px;
+    resize: none; /* вимикаємо дозвіл на зміну елементу. у textarea користувачу автоматично дозволяється вносити зміни в елементі з цим тегом - даною функцією теж можемо вимкнути дозвіл на зміну елементу */
+    overflow: auto;
+}
+
+/* наступні приклади - це задання розміру для outline, щось типу такого самого як padding для елемента */
+div.ex1 {
+    margin: 20px;
+    border: 1px solid black;
+    outline: 4px solid red;
+    outline-offset: 15px;
+} 
+  
+div.ex2 {
+    margin: 10px;
+    border: 1px solid black;
+    outline: 5px dashed blue;
+    outline-offset: 5px;
+} 

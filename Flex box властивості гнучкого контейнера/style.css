@@ -1,0 +1,223 @@
+.flex-container {
+    display: flex;
+    /* flex-direction: column; */ /* елементи рухаються зверху у низ в вигляді колонки */
+    /* flex-direction: column-reverse; */ /* елементи рухаються знизу у верх в вигляді колонки */
+    flex-direction: row; /* елементи рухаються зліва на право у вигялді рядка (за замовчуванням)*/
+    /* flex-direction: row-reverse; */ /* елементи рухаються зправа на ліво у вигялді рядка */
+    /* flex-wrap: wrap; */ /* якщо у рядку знаходиться багато елементів - застосовуємо цю властивість для перенесення на інший рядок */
+    /* flex-wrap: nowrap; */ /* зворотня властивість - елементи не переносяться на наступний рядок */
+    /* flex-wrap: wrap-reverse; */ /* переносить на інший рядок елементи але у зворотньому напрямку */
+    flex-flow: row wrap; /* скорочений варіант для задання flex-direction та flex-wrap */
+    background-color: DodgerBlue;
+}
+  
+.flex-container > div {
+    background-color: #f1f1f1;
+    width: 200px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+}
+
+.flex-container-1 {
+    display: flex;
+   /*  вирівнювання по горизонталі */
+    /* justify-content: center; */ /* елементи розташовуються по центру */
+    /* justify-content: flex-start; */ /* елементи розташовуються з лівої сторони */
+    /* justify-content: flex-end; */ /* елементи розташовуються з правої сторони */
+    /* justify-content: space-around; */ /* елементи розкидуються у контейнері з не рівними пробілами */
+    /* justify-content: space-between; */ /* елементи розкидуються по обох сторонах та по середині */
+    justify-content: space-evenly; /* елементи розташовуються по площі контейнера з рівними пробілами */
+    background-color: DodgerBlue;
+  }
+  
+.flex-container-1 > div {
+    background-color: #f1f1f1;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+}
+
+.flex-container-2 {
+    display: flex;
+    height: 200px;
+    /* вирівнювання по вертикалі */
+    /* align-items: center; */ /* елементи розміщуються по центру */
+    /* align-items: flex-start; */ /* елементи розміщуються зверху */
+    /* align-items: flex-end; */ /* елементи розміщуються знизу */
+    /* align-items: stretch; */ /* елементи розтягуються по усій висоті контейнера */
+    align-items: stretch;
+    background-color: DodgerBlue;
+}
+  
+.flex-container-2 > div {
+    background-color: #f1f1f1;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+}
+
+.flex-container-3 {
+    display: flex;
+    height: 200px;
+    align-items: baseline; /* елементи незалежно від різних розмірів розташовуються по базовій лінії */
+    background-color: DodgerBlue;
+}
+  
+.flex-container-3 > div {
+    background-color: #f1f1f1;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+}
+
+.flex-container-4 {
+    display: flex;
+    height: 300px;
+    flex-wrap: wrap;
+    align-content: space-between; /* перший варіант */
+    overflow: hidden;
+    background-color: DodgerBlue;
+}
+  
+.flex-container-4 > div {
+    background-color: #f1f1f1;
+    width: 200px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+}
+
+.flex-container-5 {
+    display: flex;
+    height: 300px;
+    flex-wrap: wrap;
+    align-content: space-around; /* другий варіант */
+    overflow: hidden;
+    background-color: DodgerBlue;
+}
+  
+.flex-container-5 > div {
+    background-color: #f1f1f1;
+    width: 200px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+}
+
+.flex-container-6 {
+    display: flex;
+    height: 300px;
+    flex-wrap: wrap;
+    align-content: space-evenly; /* третій варіант */
+    overflow: hidden;
+    background-color: DodgerBlue;
+}
+  
+.flex-container-6 > div {
+    background-color: #f1f1f1;
+    width: 200px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+}
+
+.flex-container-7 {
+    display: flex;
+    height: 300px;
+    flex-wrap: wrap;
+    align-content: stretch; /* четвертий варіант */
+    overflow: hidden;
+    background-color: DodgerBlue;
+}
+  
+.flex-container-7 > div {
+    background-color: #f1f1f1;
+    width: 200px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+}
+
+.flex-container-8 {
+    display: flex;
+    height: 300px;
+    flex-wrap: wrap;
+    align-content: center; /* пятий варіант */
+    overflow: hidden;
+    background-color: DodgerBlue;
+}
+  
+.flex-container-8 > div {
+    background-color: #f1f1f1;
+    width: 200px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+}
+
+.flex-container-9 {
+    display: flex;
+    height: 300px;
+    flex-wrap: wrap;
+    align-content: flex-start; /* шостий варіант */
+    overflow: hidden;
+    background-color: DodgerBlue;
+}
+  
+.flex-container-9 > div {
+    background-color: #f1f1f1;
+    width: 200px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+}
+
+.flex-container-10 {
+    display: flex;
+    height: 300px;
+    flex-wrap: wrap;
+    align-content: flex-end; /* сьомий варіант */
+    overflow: hidden;
+    background-color: DodgerBlue;
+}
+  
+.flex-container-10 > div {
+    background-color: #f1f1f1;
+    width: 200px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+}
+
+.flex-container-11 {
+    display: flex;
+    justify-content: center; /* центр по горизонталі */
+    align-items: center; /* центр по вертикалі */
+    height: 300px;
+    background-color: DodgerBlue;
+  }
+  
+  .flex-container-11 > div {
+    background-color: #f1f1f1;
+    color: black;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+    font-size: 30px;
+  }

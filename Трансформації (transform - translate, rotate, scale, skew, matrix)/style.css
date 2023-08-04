@@ -1,0 +1,83 @@
+/* переміщення по осям */
+div {
+    width: 300px;
+    height: 100px;
+    background-color: yellow;
+    border: 1px solid black;
+    transform: translate(100px,100px);
+}
+
+/* переміщення по градусах */
+div {
+    width: 300px;
+    height: 100px;
+    background-color: yellow;
+    border: 1px solid black;
+}
+  
+div#myDiv {
+    transform: rotate(20deg);
+}
+
+/* переміщення по градусах із відємним значенням */
+div {
+    width: 300px;
+    height: 100px;
+    background-color: yellow;
+    border: 1px solid black;
+}
+  
+div#myDiv-2 {
+    transform: rotate(-20deg);
+}
+
+/* збільшення периметру елементу по ширині та висоті */
+.item-1 {
+    margin: 150px;
+    width: 200px;
+    height: 100px;
+    background-color: yellow;
+    border: 1px solid black;
+    transform: scale(2,3); /* в 2 рази по ширині та в 3 рази по висоті */
+}
+
+/* зменшення периметру елементу по ширині та висоті */
+div .item-2 {
+    margin: 150px;
+    width: 200px;
+    height: 100px;
+    background-color: yellow;
+    border: 1px solid black;
+    transform: scale(2,3); /* в половину по ширині та в половину по висоті */
+}
+
+/* нахил еллемента за градусами */
+div#myDiv-3 {
+    transform: skewX(-20deg); /* можна також нахиляти по додактовій вертикальній осі. також одночасно можна задавати значення для нахилу для обох осей: transform: skew(20deg,10deg); */
+}
+
+/* метод matrix може включати одразу декілька властивостей і значень щодо трансформації елемента: Параметри такі: matrix(scaleX(), skewY(), skewX(), scaleY(), translateX(), translateY()) */
+div#myDiv-4 {
+    transform: matrix(1, 0, 0.5, 1, 150, 0);
+    transform-origin: 75% 75%; /* визначає початкове значення розміщення елемента. можна змінити ніби-то "відправну точку останнього" */
+}
+
+
+/* 
+Приклади 3D трансформації: 
+*/
+
+/* переміщення по горизонталі */
+#myDiv-5 {
+    transform: rotateX(150deg);
+}
+
+/* переміщення по вертикалі */
+#myDiv-6 {
+    transform: rotateY(150deg);
+}
+
+/* обертання елемента навколо осі */
+#myDiv-7 {
+    transform: rotateZ(90deg);
+  }

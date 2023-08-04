@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Плавні переходи елементів (transition, transition-delay, transition-duration, transition-property, transition-timing-function)</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- плавна зміна ширини обєкту при ховері -->
+    <br>
+    <br>
+    <hr>
+    <br>
+    <div class="item-1"></div>
+    <br>
+    <br>
+    <hr>
+    <br>
+
+    <!-- плавна зміна ширини та висоти обєкту при ховері (нотатка: зміни відбуваються не одночасно по обох осях, а по порядку, спочатку змінюється основна - горизонтальна ось, а вже після цього додаткова вертикальна) -->
+    <div class="item-2"></div>
+    <br>
+    <br>
+    <hr>
+    <br>
+
+    <!-- крива швидкості переходу, фактично різні стилі поведінки при переході -->
+
+<!-- 
+    Властивість transition-timing-functionвизначає криву швидкості ефекту переходу.
+
+    Властивість conversion-timing-function може мати такі значення:
+
+ease- визначає ефект переходу з повільним початком, потім швидким і повільним завершенням (це типово)
+linear- визначає ефект переходу з однаковою швидкістю від початку до кінця
+ease-in- визначає ефект переходу з повільним стартом
+ease-out- визначає ефект переходу з повільним кінцем
+ease-in-out- визначає ефект переходу з повільним початком і закінченням
+cubic-bezier(n,n,n,n)- дозволяє визначати власні значення у функції кубічного Безьє
+У наведеному нижче прикладі показано кілька різних кривих швидкості, які можна використовувати: -->
+
+    <div class="transition item-3">linear</div><br>
+    <div class="transition item-4">ease</div><br>
+    <div class="transition item-5">ease-in</div><br>
+    <div class="transition item-6">ease-out</div><br>
+    <div class="transition item-7">ease-in-out</div><br>
+    <hr>
+    <br>
+
+    <!-- задання ефекту затримки перед виконанням фактичного переходу елемента у інший стан при ховері -->
+    <div class="item-8"></div>
+    <br>
+    <br>
+    <hr>
+    <br>
+
+    <!-- класний ефект з одночасною зміною декількох значень властивостей -->
+    <div class="item-9"></div>
+    <br>
+    <hr>
+    <br>
+
+    <!-- існує скорочена версія задання властивостей та значень для переходів:
+    Повна:
+    transition-property: width;
+    transition-duration: 2s;
+    transition-timing-function: linear;
+    transition-delay: 1s;
+    Коротка:
+    transition: width 2s linear 1s;
+    -->
+    <div class="item-10"></div>
+    <br>
+    <hr>
+    <br>
+</body>
+</html>

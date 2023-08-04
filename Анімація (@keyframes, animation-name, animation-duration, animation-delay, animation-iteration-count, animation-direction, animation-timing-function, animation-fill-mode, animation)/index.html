@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Анімація (@keyframes, animation-name, animation-duration, animation-delay, animation-iteration-count, animation-direction, animation-timing-function, animation-fill-mode, animation)</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <br>
+    <br>
+    <hr>
+    <br>
+
+    <!-- зміна кольорів елемента -->
+    <div class="item-1"></div>
+    <br>
+    <hr>
+    <br>
+
+    <!-- зміна кольорів за станом відсотків -->
+    <div class="item-2"></div>
+    <br>
+    <hr>
+    <br>
+
+    <!-- зміна місце знаходження елемента разом із зміною кольорів та затримкою -->
+    <div class="item-3"></div>
+    <br>
+    <hr>
+    <br>
+
+<!-- 
+    Крива швидкості анімації за аналогією до плавних переходів (ті ж значення):
+
+Властивість animation-timing-function може мати такі значення:
+
+ease- Визначає анімацію з повільним початком, потім швидким і повільним завершенням (це типово)
+linear- Визначає анімацію з однаковою швидкістю від початку до кінця
+ease-in- Визначає анімацію з повільним початком
+ease-out- Визначає анімацію з повільним кінцем
+ease-in-out- Визначає анімацію з повільним початком і кінцем
+cubic-bezier(n,n,n,n)- Дозволяє визначати власні значення у функції кубічного Без’є
+-->
+
+<div class="move item-4">linear</div>
+<div class="move item-5">ease</div>
+<div class="move item-6">ease-in</div>
+<div class="move item-7">ease-out</div>
+<div class="move item-8">ease-in-out</div>
+    <br>
+    <hr>
+    <br>
+
+    <!-- CSS-анімація не впливає на елемент до відтворення першого ключового кадру або після відтворення останнього ключового кадру. Властивість animation-fill-mode може замінити цю поведінку.
+
+    Властивість animation-fill-modeвизначає стиль цільового елемента, коли анімація не відтворюється (перед її початком, після її завершення або обидва).
+    
+    Властивість animation-fill-mode може мати такі значення:
+    
+    none- Значення за замовчуванням. Анімація не застосовуватиме стилі до елемента до або після його виконання
+    forwards- Елемент збереже значення стилю, встановлені останнім ключовим кадром (залежить від animation-direction і animation-iteration-count)
+    backwards- Елемент отримає значення стилю, встановлені першим ключовим кадром (залежить від напрямку анімації), і збереже це протягом періоду затримки анімації
+    both- Анімація відповідатиме правилам для руху вперед і назад, розширюючи властивості анімації в обох напрямках -->
+    <div class="item-9"></div>
+    <br>
+    <hr>
+    <br>
+
+<!-- 
+    Окрім довгого опису властивостей та значень:
+    animation-name: example;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    Існує можливість задання скороченої версії:
+    animation: example 5s linear 2s infinite alternate;
+-->
+    <div class="item-10"></div>
+</body>
+</html>

@@ -1,0 +1,90 @@
+.grid-container {
+    display: grid;
+    gap: 10px;
+    background-color: #2196F3;
+    padding: 10px;
+}
+  
+.grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px;
+    font-size: 30px;
+}
+
+/* визначення значень для декотрих елементів сітки щодо індивідуального охоплення декількох рядків та стовпців */
+.item1 {
+    grid-column: 1 / span 2; /* елемент охоплюватиме з 1-ї по 2-гу колонку включно*/
+    grid-row: 1; /* елемент займатиме тільки 1-ий рядок */
+}
+  
+.item2 {
+    grid-column: 3; /* елемент займатиме 3-тю колонку */
+    grid-row: 1 / span 2; /* елемент охоплюватиме з 1-го по 2-ий рядок включно*/
+}
+  
+.item5 {
+    grid-column: 1 / span 3; /* елемент охоплюватиме з 1-ї по 3-тю колонку включно*/
+    grid-row: 3; /* елемент займатиме тільки 3-ій рядок */
+}
+
+/* grid-area */
+.grid-container-1 {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    gap: 10px;
+    background-color: #2196F3;
+    padding: 10px;
+}
+  
+.grid-container-1 > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+}
+  
+.item-8 {
+    grid-area: 1 / 2 / 5 / 6; /* Пункт 8 розпочнеться в рядку 1 і стовпці 2 і закінчиться в рядку 5, стовпці, рядку 6 */
+}
+
+/* grid-template-areas */
+.items1 {
+    grid-area: myArea;
+}
+  
+.grid-container-2 {
+    display: grid;
+    grid-template-areas: 'myArea myArea myArea myArea myArea';
+    gap: 10px;
+    background-color: #2196F3;
+    padding: 10px;
+}
+  
+.grid-container-2 > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+}
+
+/* grid-template-areas - тлумачення значення крапок "..."*/
+.item_1 {
+    grid-area: myArea;
+}
+  
+.grid-container-3 { 
+    display: grid;
+    grid-template-areas: 'myArea myArea . . .';
+    
+    gap: 10px;
+    background-color: #2196F3;
+    padding: 10px;
+}
+  
+.grid-container-3 > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+}

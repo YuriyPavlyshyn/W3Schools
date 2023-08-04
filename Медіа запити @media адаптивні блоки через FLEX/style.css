@@ -1,0 +1,29 @@
+* {
+    box-sizing: border-box;
+}
+  
+/* Контейнер для флексбоксів */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+  
+/* Створіть чотири рівні стовпці */
+.column {
+    flex: 25%;
+    padding: 20px;
+}
+  
+/* На екранах із шириною 992 пікселів або менше перейдіть від чотирьох стовпців до двох */
+@media screen and (max-width: 992px) {
+    .column {
+      flex: 50%;
+    }
+}
+  
+/* На екранах із шириною 600 пікселів або менше стовпці розташовуються один над одним, а не поруч. */
+@media screen and (max-width: 600px) {
+    .row {
+      flex-direction: column;
+    }
+}

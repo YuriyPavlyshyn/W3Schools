@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Змінні перевизначені (var())</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- Іноді ми хочемо, щоб змінні змінювалися лише в певному розділі сторінки.
+
+Припустімо, що нам потрібен інший колір синього для елементів кнопки. Потім ми можемо повторно оголосити змінну --blue всередині селектора кнопки. Коли ми використовуємо var(--blue) всередині цього селектора, він використовуватиме локальне значення змінної --blue, оголошене тут.
+
+Ми бачимо, що локальна змінна --blue замінить глобальну змінну --blue для елементів кнопки: -->
+
+<h1>Override Global Variable With Local Variable</h1>
+
+<div class="container">
+  <h2>Lorem Ipsum</h2>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis blandit.</p>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis blandit.</p>
+  <p>
+    <button>Yes</button>
+    <button>No</button>
+  </p>
+</div>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Змінні в CSS використання у медіа-запитах</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- Тепер ми хочемо змінити значення змінної в медіа-запиті.
+
+Порада. Медіа-запити стосуються визначення різних правил стилю для різних пристроїв (екранів, планшетів, мобільних телефонів тощо). Ви можете дізнатися більше про медіа-запити в нашому розділі про медіа-запити .
+
+Тут ми спочатку оголошуємо нову локальну змінну під назвою --fontsize для .containerкласу. Встановлюємо його значення 25 пікселів. Потім ми використовуємо його в .containerкласі нижче. Потім ми створюємо @mediaправило, яке говорить: «Якщо ширина браузера становить 450 пікселів або більше, змініть значення змінної --fontsize класу .containerна 50 пікселів».
+
+Ось повний приклад: -->
+
+<h1>Using Variables in Media Queries</h1>
+
+<div class="container">
+  <h2>Lorem Ipsum</h2>
+  <p>When the browser's width is less than 450px, the font-size of this div is 25px. When it is 450px or wider, set the --fontsize variable value to 50px. Resize the browser window to see the effect.</p>
+</div>
+</body>
+</html>

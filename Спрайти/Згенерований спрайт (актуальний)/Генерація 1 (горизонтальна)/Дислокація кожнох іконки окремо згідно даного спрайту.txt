@@ -1,0 +1,59 @@
+.bg-free_icon_chrome_232416_50px {
+    width: 50px; height: 50px;
+    background: url('css_sprites.png') -15px -15px;
+}
+
+.bg-free_icon_facebook_2504903_50px {
+    width: 50px; height: 50px;
+    background: url('css_sprites.png') -95px -15px;
+}
+
+.bg-free_icon_facebook_messenger_2504926_50px {
+    width: 50px; height: 50px;
+    background: url('css_sprites.png') -175px -15px;
+}
+
+.bg-free_icon_gmail_270021_50px {
+    width: 50px; height: 50px;
+    background: url('css_sprites.png') -255px -15px;
+}
+
+.bg-free_icon_instagram_1409946_50px {
+    width: 50px; height: 50px;
+    background: url('css_sprites.png') -335px -15px;
+}
+
+.bg-free_icon_linkedin_2504923_50px {
+    width: 50px; height: 50px;
+    background: url('css_sprites.png') -415px -15px;
+}
+
+.bg-free_icon_sharethis_1532524_50px {
+    width: 50px; height: 50px;
+    background: url('css_sprites.png') -495px -15px;
+}
+
+.bg-free_icon_skype_2504937_50px {
+    width: 50px; height: 50px;
+    background: url('css_sprites.png') -575px -15px;
+}
+
+.bg-free_icon_twitter_3955032_50px {
+    width: 50px; height: 50px;
+    background: url('css_sprites.png') -655px -15px;
+}
+
+.bg-free_icon_viber_2504948_50px {
+    width: 50px; height: 50px;
+    background: url('css_sprites.png') -735px -15px;
+}
+
+.bg-free_icon_whatsapp_2504957_50px {
+    width: 50px; height: 50px;
+    background: url('css_sprites.png') -815px -15px;
+}
+
+.bg-free_icon_youtube_2504965_50px {
+    width: 50px; height: 50px;
+    background: url('css_sprites.png') -895px -15px;
+}

@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid позиціонування в контейнері</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Властивість grid-template-columns
+Властивість grid-template-columnsвизначає кількість стовпців у вашому макеті сітки, а також може визначати ширину кожного стовпця.
+
+Значення — це список, розділений пробілами, де кожне значення визначає ширину відповідного стовпця.
+
+Якщо ви хочете, щоб ваш макет сітки містив 4 стовпці, вкажіть ширину 4 стовпців або "автоматично", якщо всі стовпці повинні мати однакову ширину. -->
+
+<!-- Примітка. Якщо у вас більше 4 елементів у сітці з 4 стовпців, сітка автоматично додасть новий рядок для розміщення елементів. -->
+
+<!-- Властивість grid-template-columnsтакож можна використовувати для визначення розміру (ширини) стовпців. -->
+        <br>
+        <hr>
+        <br>
+<h1>Властивість grid-template-columns</h1>
+
+<p>Ви можете використовувати властивість <em>grid-template-columns</em>, щоб вказати кількість стовпців у вашому макеті сітки.</p>
+
+<div class="grid-container">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>  
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>  
+    <div>7</div>
+    <div>8</div>
+</div>
+    <br>
+    <hr>
+    <br>
+
+    <!-- Властивість grid-template-rows
+    Властивість grid-template-rows визначає висоту кожного рядка. 
+    Значення — це список, розділений пробілами, де кожне значення визначає висоту відповідного рядка:
+    -->
+    <h1>Властивість grid-template-rows</h1>
+    Використовуйте властивість <em>grid-template-rows</em>, щоб вказати розмір (висоту) кожного рядка.
+<div class="grid-container-1">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>  
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>  
+    <div>7</div>
+    <div>8</div>
+    <div>9</div>  
+    <div>10</div>
+    <div>11</div>
+    <div>12</div> 
+    <div>13</div>  
+    <div>14</div>
+    <div>15</div>
+    <div>16</div> 
+</div>
+    
+    <br>
+    <br>
+    <hr>
+    <br>
+    
+        Для grid-template-columns ми задаємо значення ширини стовпців
+        Для grid-template-rows ми задаємо значення висоти рядків
+    
+
+    <br>
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br>
+    <br>
+
+    <!-- Властивість justify-content
+Властивість justify-content використовується для !!!!!!!горизонтального!!!!!!! вирівнювання всієї сітки всередині контейнера. -->
+<h1>Властивість justify-content</h1>
+<p>Використовуйте властивість <em>justify-content</em>, щоб вирівняти сітку всередині контейнера.</p>
+<p>Значення «space-evenly» дасть стовпцям однакову кількість простору між ними та навколо них:</p>
+
+<div class="grid-container-2">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>  
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>  
+</div>
+    <br>
+    <hr>
+    <br>
+
+<p>Значення "space-around" надасть стовпцям однакову кількість простору навколо них:</p>
+<div class="grid-container-3">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>  
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>  
+</div>
+    <br>
+    <hr>
+    <br>    
+
+<p>Значення "пробіл між" дасть стовпцям однакову кількість простору між ними:</p>
+<div class="grid-container-4">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>  
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>  
+</div>
+    <br>
+    <hr>
+    <br>  
+    
+<p>Значення "center" вирівняє сітку посередині контейнера:</p>
+<div class="grid-container-5">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>  
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>  
+</div>
+    <br>
+    <hr>
+    <br>
+
+<p>Значення "start" вирівняє сітку на початку контейнера:</p>
+<div class="grid-container-6">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>  
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>  
+</div>
+    <br>
+    <hr>
+    <br>
+
+<p>Значення "end" вирівняє сітку в кінці контейнера:</p>
+<div class="grid-container-7">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>  
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>  
+</div>
+    <br>
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br>
+    <br>
+
+    <!-- Властивість align-content
+    Властивість align-content використовується для !!!!!!!вертикального!!!!!!! вирівнювання всієї сітки всередині контейнера. 
+    Примітка: загальна висота сітки має бути меншою за висоту контейнера, щоб властивість align-content мала ефект.-->
+
+    <h1>Властивість align-content</h1>
+<p>Значення "center" вирівняє рядки посередині контейнера:</p>
+<div class="grid-container-8">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>  
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>  
+</div>
+    <br>
+    <hr>
+    <br>
+
+<p>Значення «space-evenly» забезпечить рівну кількість простору між рядками та навколо них:</p>
+<div class="grid-container-9">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>  
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>  
+</div>
+    <br>
+    <hr>
+    <br>
+
+<p>Значення "space-around" надасть рядкам однакову кількість простору навколо них:</p>
+<div class="grid-container-10">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>  
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>  
+</div>
+    <br>
+    <hr>
+    <br>
+
+<p>Значення "пробіл між" дасть рядкам рівний відстань між ними:</p>
+<div class="grid-container-11">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>  
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>  
+</div>
+    <br>
+    <hr>
+    <br>
+
+<p>Значення "start" вирівняє рядки на початку контейнера:</p>
+<div class="grid-container-12">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>  
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>  
+</div>
+    <br>
+    <hr>
+    <br>
+
+<p>Значення "end" вирівняє рядки в кінці контейнера:</p>
+<div class="grid-container-13">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>  
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>  
+</div>
+    <br>
+    <hr>
+    <br>
+</body>
+</html>

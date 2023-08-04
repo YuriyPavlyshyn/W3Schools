@@ -1,0 +1,63 @@
+/* текст не поміщається в бокс, однак прихований та не вилазить за його межі */
+p.test1 {
+    white-space: nowrap; /* текст не пеерноситься за межі боксу */
+    width: 200px; 
+    border: 1px solid #000000;
+    overflow: hidden; /* текст що не входить в межі боксу приховується */
+    text-overflow: clip;
+}
+
+/* текст не поміщається в бокс та прихований і не вилазить за його межі. Забираємо останнє видиме слово з контенту та замінюємо його трьома крапками в кінці видимого тексту */
+p.test2 {
+    white-space: nowrap; 
+    width: 200px; 
+    border: 1px solid #000000;
+    overflow: hidden;
+    text-overflow: ellipsis; /* додаємо три крапки */
+}
+
+/* відкриваємо вміст невидимого тексту що йде поза межами боксу при ховері */
+div.test {
+    white-space: nowrap; 
+    width: 200px; 
+    overflow: hidden; 
+    border: 1px solid #000000;
+}
+
+div.test:hover {
+    overflow: visible;
+}
+
+/* переносимо всі слова у новий рядок, однак деякі слова можуть бути перерізані по середині і перенесені у новий рядок */
+p.test-1 {
+    width: 11em; 
+    border: 1px solid #000000;
+    word-wrap: break-word;
+}
+
+/* перенесення слів по наявних знаках дефісу, або ж в хаотичному розриві таких слів та перенесення на нові рядки */
+p.test-2 {
+    width: 140px; 
+    border: 1px solid #000000;
+    word-break: keep-all; /* слова переносяться по знаках дефісу */
+}
+  
+p.test-3 {
+    width: 140px; 
+    border: 1px solid #000000;
+    word-break: break-all; /* слова розбиваються хаотично на різні частини та переносяться на нові рядки */
+}
+
+/* горизонтальне (зліва на право) та вертикальне (зверху у низ) розміщення текстового контенту */
+p.test-4 {
+    writing-mode: horizontal-tb; 
+}
+  
+span.test-5 {
+    writing-mode: vertical-rl; 
+}
+  
+p.test-6 {
+    padding: 30px;
+    writing-mode: vertical-rl; 
+}

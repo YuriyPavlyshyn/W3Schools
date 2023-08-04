@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid створення сітки</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- !!!! Приклади застосування Grid: https://blog.csssr.com/ru/article/css-grid-by-example/ !!!! -->
+    
+<!-- Розмітка сітки
+Модуль CSS Grid Layout Module пропонує систему макета на основі сітки з рядками та стовпцями, що полегшує дизайн веб-сторінок без використання плаваючих елементів і позиціонування. -->
+
+        <br>
+        <hr>
+        <br>
+    <h1>Розмітка сітки</h1>
+
+    <p>Цей макет сітки містить шість стовпців і три рядки:</p>
+
+<div class="grid-container">
+    <div class="item1">Header</div>
+    <div class="item2">Menu</div>
+    <div class="item3">Main</div>  
+    <div class="item4">Right</div>
+    <div class="item5">Footer</div>
+</div>
+
+        <br>
+        <hr>
+        <br>
+        <!-- Елементи сітки
+        Макет сітки складається з батьківського елемента та одного або кількох дочірніх елементів. -->
+        <h1>Елементи сітки</h1>
+
+    <p>Макет сітки повинен мати батьківський елемент із властивістю <em>display</em>, установленою на <em>grid</em> або <em>inline-grid</em>.</p>
+        
+    <p>Прямі дочірні елементи контейнера сітки автоматично стають елементами сітки.</p>
+        
+<div class="grid-container-1">
+    <div class="grid-item">1</div>
+    <div class="grid-item">2</div>
+    <div class="grid-item">3</div>  
+    <div class="grid-item">4</div>
+    <div class="grid-item">5</div>
+    <div class="grid-item">6</div>  
+    <div class="grid-item">7</div>
+    <div class="grid-item">8</div>
+    <div class="grid-item">9</div>  
+</div>
+        <br>
+        <hr>
+        <br>
+
+    <!-- застосовуємо inline-grid -->
+    Застосовуємо inline-grid
+    <h1>display: inline-grid</h1>
+
+<p>Використання відображення: inline-grid; щоб створити контейнер вбудованої сітки:</p>
+
+<div class="grid-container-2">
+    <div class="grid-item">1</div>
+    <div class="grid-item">2</div>
+    <div class="grid-item">3</div>  
+    <div class="grid-item">4</div>
+    <div class="grid-item">5</div>
+    <div class="grid-item">6</div>  
+    <div class="grid-item">7</div>
+    <div class="grid-item">8</div>
+    <div class="grid-item">9</div>  
+</div>
+
+    <!-- 
+        Є такі види розривів в grid:
+    - column-gap: вертикальний розрив між елементами сітки
+    - row-gap: шоризонатльний розрив між елементами сітки
+    - gap: скорочена версія, що включає у себе дві властивості: column-gap та row-gap
+-->
+        <br>
+        <hr>
+        <br>
+Застосовуємо розриви між колонками та рядкамив
+<div class="grid-container-3">
+    <div class="grid-item">1</div>
+    <div class="grid-item">2</div>
+    <div class="grid-item">3</div>  
+    <div class="grid-item">4</div>
+    <div class="grid-item">5</div>
+    <div class="grid-item">6</div>  
+    <div class="grid-item">7</div>
+    <div class="grid-item">8</div>
+    <div class="grid-item">9</div>  
+</div>
+        <br>
+        <hr>
+        <br>
+
+        <!-- Лінії сітки
+Лінії між колонками називаються лініями колонок.
+Лінії між рядами називаються лініями рядів. 
+Зверніться до номерів рядків, коли розміщуєте елемент сітки в контейнері сітки:
+-->
+
+Сітка із зверненням до колонок для побудови лейауту (звертаємось не до контейнера, а до елементів сітки окремо та індивідуально)
+<div class="grid-container-4">
+    <div class="item-1">1</div>
+    <div class="item-2">2</div>
+    <div class="item-3">3</div>  
+    <div class="item-4">4</div>
+    <div class="item-5">5</div>
+    <div class="item-6">6</div>
+    <div class="item-7">7</div>
+    <div class="item-8">8</div>  
+</div>
+    <br>
+    <hr>
+    <br>
+Сітка із зверненням до колонок для побудови лейауту (звертаємось не до контейнера, а до елементів сітки окремо та індивідуально)
+<div class="grid-container-5">
+    <div class="item11">1</div>
+    <div class="item12">2</div>
+    <div class="item13">3</div>  
+    <div class="item14">4</div>
+    <div class="item15">5</div>
+    <div class="item16">6</div>
+    <div class="item17">7</div>
+    <div class="item18">8</div>  
+  </div>
+    <br>
+    <hr>
+    <br>
+</body>
+</html>

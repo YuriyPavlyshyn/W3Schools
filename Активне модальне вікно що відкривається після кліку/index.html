@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Активне модальне вікно що відкривається після кліку</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <img id="myImg" src="./img/2.jpg" alt="img">
+    <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="img01">
+        <div id="caption"></div>
+    </div>
+      
+    <script>
+        // Отримайте модаль
+        var modal = document.getElementById('myModal');
+        
+        // Отримайте зображення та вставте його всередину модалу - використовуйте його "альтернативний" текст як підпис
+        var img = document.getElementById('myImg');
+        var modalImg = document.getElementById("img01");
+        var captionText = document.getElementById("caption");
+        img.onclick = function(){
+          modal.style.display = "block";
+          modalImg.src = this.src;
+          captionText.innerHTML = this.alt;
+        }
+        
+        // Отримайте елемент <span>, який закриває модаль
+        var span = document.getElementsByClassName("close")[0];
+        
+        // Коли користувач клацає на <span> (x), закривається модальне вікно
+        span.onclick = function() { 
+          modal.style.display = "none";
+        }
+    </script>
+</body>
+</html>

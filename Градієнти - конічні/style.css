@@ -1,0 +1,77 @@
+/* три кольори */
+#grad1 {
+    height: 200px;
+    width: 200px;
+    background-color: red; /* Для браузерів, які не підтримують градієнти */
+    background-image: conic-gradient(red, yellow, green);
+}
+
+/* пять кольорів */
+#grad2 {
+    height: 200px;
+    width: 200px;
+    background-color: red; /* For browsers that do not support gradients */
+    background-image: conic-gradient(red, yellow, green, blue, black);
+}
+
+/* кольори з градусами для кожного індивідуально */
+#grad3 {
+    height: 200px;
+    width: 200px;
+    background-color: red; /* For browsers that do not support gradients */
+    background-image: conic-gradient(red 45deg, yellow 90deg, green 210deg);
+}
+
+/* конічний градієнт у вигляді кола */
+#grad4 {
+    height: 200px;
+    width: 200px;
+    background-color: red; /* For browsers that do not support gradients */
+    background-image: conic-gradient(red, yellow, green, blue, black);
+    border-radius: 50%;
+}
+
+/* конічний градієнт із заданням чітких позицій для кожного кольору за допомогою градусів */
+#grad5 {
+    height: 200px;
+    width: 200px;
+    background-color: red; /* For browsers that do not support gradients */
+    background-image: conic-gradient(red 0deg, red 90deg, yellow 90deg, yellow 180deg, green 180deg, green 270deg, blue 270deg);
+    border-radius: 50%;
+}
+
+/* конічний градієнт із зміною основного кута початку та закінчення відліку кольорів */
+#grad6 {
+    height: 200px;
+    width: 200px;
+    background-color: red; /* For browsers that do not support gradients */
+    background-image: conic-gradient(from 90deg, red, yellow, green);
+    border-radius: 50%;
+}
+
+/* конічний градієнт із зміненням фіксованого центру */
+#grad7 {
+    height: 200px;
+    width: 200px;
+    background-color: red; /* For browsers that do not support gradients */
+    background-image: conic-gradient(at 60% 45%, red, yellow, green);
+    border-radius: 50%;
+}
+
+/* повторення конічного градієнту */
+#grad8 {
+    height: 200px;
+    width: 200px;
+    background-color: red; /* For browsers that do not support gradients */
+    background-image: repeating-conic-gradient(red 10%, yellow 20%);
+    border-radius: 50%;
+}
+
+/* конічний градієнт із чітко визначеними початками та кінцями кольорів */
+#grad9 {
+    height: 200px;
+    width: 200px;
+    background-color: red; /* For browsers that do not support gradients */
+    background-image: repeating-conic-gradient(red 0deg 10deg, yellow 10deg 20deg, blue 20deg 30deg);
+    border-radius: 50%;
+}

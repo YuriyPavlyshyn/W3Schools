@@ -1,0 +1,30 @@
+:root { /* визначення глобальнх змінних */
+    --blue: #1e90ff;
+    --white: #ffffff; 
+  }
+  
+  body {
+    background-color: var(--blue);
+  }
+  
+  h2 {
+    border-bottom: 2px solid var(--blue);
+  }
+  
+  .container {
+    color: var(--blue);
+    background-color: var(--white);
+    padding: 15px;
+  }
+  
+  button {
+    --blue: #0000ff; /* перевизначення змінної локально для конкретного елемента. назву змінно залишаємо, значення змінної змінюємо*/
+    /* 
+    тут ми створюємо нову локальну змінну із зміною імені та значення:
+    --button-blue: #0000ff;в
+    */
+    background-color: var(--button-blue); /* застосовуємо нову локальну змінну для елементау */
+    color: var(--blue);
+    border: 1px solid var(--blue);
+    padding: 5px;
+  }

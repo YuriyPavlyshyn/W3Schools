@@ -1,0 +1,40 @@
+/* orientation: landscape, орієнтація на альбомні розширенння - горизонтальні */
+body {
+  background-color: lightgreen;
+}
+
+@media only screen and (orientation: landscape) {
+  body {
+    background-color: lightblue;
+  }
+}
+
+/* приховування елементу при зміні розширення екрану */
+div.example {
+    background-color: yellow;
+    padding: 20px;
+}
+  
+@media screen and (max-width: 600px) {
+    div.example {
+      display: none;
+    }
+}
+
+/* зміна розміру шрифту при зміні розміру розширення екрану */
+div.example-1 {
+    background-color: lightgrey;
+    padding: 20px;
+}
+  
+@media screen and (min-width: 600px) {
+    div.example-1 {
+      font-size: 80px;
+    }
+}
+  
+@media screen and (max-width: 600px) {
+    div.example-1 {
+      font-size: 30px;
+    }
+}

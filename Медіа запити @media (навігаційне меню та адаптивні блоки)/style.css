@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box;
+}
+  
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+}
+  
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+  
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+  
+.column {
+    float: left;
+    width: 25%;
+    padding: 20px;
+}
+  
+/* Прозорі поплавці після колон */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+  
+/* На екранах із шириною 992 пікселів або менше перейдіть від чотирьох стовпців до двох */
+@media screen and (max-width: 992px) {
+    .column {
+        width: 50%;
+    }
+}
+
+/* На екранах шириною 600 пікселів або менше зробіть так, щоб посилання на меню розміщувалися одне над одним, а не поруч. */
+@media screen and (max-width: 600px) {
+    .topnav a {
+        float: none;
+        width: 100%;
+    }
+    .column {
+        width: 100%;
+    }
+}

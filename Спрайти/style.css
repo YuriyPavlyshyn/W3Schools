@@ -1,0 +1,246 @@
+
+/* .sprite {
+    background-image: url(./spritesheet.png);
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+
+.sprite-github {
+    width: 30px;
+    height: 30px;
+    background-position: -5px -5px;
+}
+
+.sprite-gmail {
+    width: 30px;
+    height: 30px;
+    background-position: -45px -5px;
+}
+
+.sprite-linkedin {
+    width: 30px;
+    height: 30px;
+    background-position: -5px -45px;
+}
+
+.sprite-stackoverflow {
+    width: 30px;
+    height: 30px;
+    background-position: -45px -45px;
+}
+
+.sprite-tumblr {
+    width: 30px;
+    height: 30px;
+    background-position: -85px -5px;
+}
+
+.sprite-twitter {
+    width: 30px;
+    height: 30px;
+    background-position: -85px -45px;
+} */
+
+.home {
+    max-width: 250px;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.home1 {
+    width: 50px;
+    height: 50px;
+    background: url(./img/spritesheet.png) 0 0;
+}
+  
+.home2 {
+    width: 50px;
+    height: 50px;
+    background: url(./img/spritesheet.png) -50px -0px;
+}
+
+.home3 {
+    width: 50px;
+    height: 50px;
+    background: url(./img/spritesheet.png) -100px -0px;
+}
+
+.home4 {
+    width: 50px;
+    height: 50px;
+    background: url(./img/spritesheet.png) -150px 0;
+}
+  
+.home5 {
+    width: 50px;
+    height: 50px;
+    background: url(./img/spritesheet.png) -200px -0px;
+}
+
+.home6 {
+    width: 50px;
+    height: 50px;
+    background: url(./img/spritesheet.png) 0 -50px;
+}
+
+.home7 {
+    width: 50px;
+    height: 50px;
+    background: url(./img/spritesheet.png) -50px -50px;
+}
+
+.home8 {
+    width: 50px;
+    height: 50px;
+    background: url(./img/spritesheet.png) -100px -50px;
+}
+
+.home9 {
+    width: 50px;
+    height: 50px;
+    background: url(./img/spritesheet.png) -150px -50px;
+}
+
+.home10 {
+    width: 50px;
+    height: 50px;
+    background: url(./img/spritesheet.png) -200px -50px;
+}
+
+.home11 {
+    width: 50px;
+    height: 50px;
+    background: url(./img/spritesheet.png) 0 -100px;
+}
+  
+.home12 {
+    width: 50px;
+    height: 50px;
+    background: url(./img/spritesheet.png) -50px -100px;
+}
+
+.home13 {
+    width: 50px;
+    height: 50px;
+    background: url(./img/spritesheet.png) -100px -100px;
+}
+
+.home14 {
+    width: 50px;
+    height: 50px;
+    background: url(./img/spritesheet.png) -150px -100px;
+}
+  
+.home15 {
+    width: 50px;
+    height: 50px;
+    background: url(./img/spritesheet.png) -200px -100px;
+}
+
+.home16 {
+    width: 50px;
+    height: 50px;
+    background: url(./img/spritesheet.png) 0 -150px;
+}
+
+.home17 {
+    width: 50px;
+    height: 50px;
+    background: url(./img/spritesheet.png) -50px -150px;
+}
+
+.home18 {
+    width: 50px;
+    height: 50px;
+    background: url(./img/spritesheet.png) -100px -150px;
+}
+
+.home19 {
+    width: 50px;
+    height: 50px;
+    background: url(./img/spritesheet.png) -150px -150px;
+}
+
+.home20 {
+    width: 50px;
+    height: 50px;
+    background: url(./img/spritesheet.png) -200px -150px;
+}
+
+.item {
+    max-width: 150px;
+    max-height: 100px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.mini {
+    width: 25px;
+    height: 25px;
+    background: url(./img/Мій\ Спрайт\ 25рх.png)
+}
+
+.item-1 {
+    background-position: 0 0;
+}
+
+.item-2 {
+    background-position: -25px 0;
+}
+
+.item-3 {
+    background-position: -50px 0;
+}
+
+.item-4 {
+    background-position: -75px 0;
+}
+
+.item-5 {
+    background-position: -100px 0;
+}
+
+.item-6 {
+    background-position: 0 -25px;
+}
+
+.item-7 {
+    background-position: -25px -25px;
+}
+
+.item-8 {
+    background-position: -50px -25px;
+}
+
+.item-9 {
+    background-position: -75px -25px;
+}
+
+.item-10 {
+    background-position: -100px -25px;
+}
+
+.item-11 {
+    background-position: 0 -50px;
+}
+
+.item-12 {
+    background-position: -25px -50px;
+}
+
+.item-13 {
+    background-position: -50px -50px;
+}
+
+.item-14 {
+    background-position: -75px -50px;
+}
+
+.item-15 {
+    background-position: -100px -50px;
+}
+

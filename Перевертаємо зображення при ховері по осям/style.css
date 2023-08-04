@@ -1,0 +1,9 @@
+/* по осі Х */
+.item-1:hover {
+    transform: scaleX(-1);
+}
+
+/* по осі Х */
+.item-2:hover {
+    transform: scaleY(-1);
+}

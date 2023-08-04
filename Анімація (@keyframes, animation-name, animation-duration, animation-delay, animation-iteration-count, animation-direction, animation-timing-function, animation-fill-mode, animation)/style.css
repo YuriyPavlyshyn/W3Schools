@@ -1,0 +1,110 @@
+/* зміна кольорів елемента */
+.item-1 {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation-name: example;
+    animation-duration: 4s;
+}
+  
+@keyframes example {
+    from {background-color: red;}
+    to {background-color: yellow;}
+}
+
+/* зміна кольорів за станом відсотків */
+.item-2 {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation-name: example1;
+    animation-duration: 4s;
+}
+  
+@keyframes example1 {
+    0%   {background-color: red;}
+    25%  {background-color: yellow;}
+    50%  {background-color: blue;}
+    100% {background-color: green;}
+}
+
+/* зміна місце знаходження елемента разом із зміною кольорів та затримкою */
+.item-3 {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    animation-name: example2;
+    animation-duration: 4s;
+    animation-delay: 2s;
+    /* якщо застосувати мінусове значення: animation-delay: -2s; відтворюватиметься ефект того що анімація ніби-то вже триває протягом 2 секунд */
+    animation-iteration-count: 3; /* задаємо кількість інтерацій відтворення анімації, в даному випадку анімація відтвориться 3 рази. Якщо задати значення: infinite - кількість ітерацій буде постійною та ніколи не закінчцватиметься */
+    animation-direction: reverse;  /* в даному випадку анімація буде відтворюватиметься навпаки (проти годинникової стрілки) */
+    /* Є такі значення для встановлення напрямку анімації: 
+normal- Анімація відтворюється як звичайно (вперед). Це за умовчанням
+reverse- Анімація відтворюється у зворотному напрямку (назад)
+alternate - Анімація відтворюється спочатку вперед, потім назад
+alternate-reverse- Анімація відтворюється спочатку назад, потім вперед */
+}
+  
+@keyframes example2 {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:200px; top:0px;}
+    50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}
+}
+
+/* Крива швидкості анімації за аналогією до плавних переходів (ті ж значення) */
+.move {
+    width: 100px;
+    height: 50px;
+    background-color: red;
+    font-weight: bold;
+    position: relative;
+    animation: mymove 5s infinite;
+}
+  
+.item-4 {animation-timing-function: linear;}
+.item-5 {animation-timing-function: ease;}
+.item-6 {animation-timing-function: ease-in;}
+.item-7 {animation-timing-function: ease-out;}
+.item-8 {animation-timing-function: ease-in-out;}
+  
+@keyframes mymove {
+    from {left: 0px;}
+    to {left: 300px;}
+}
+
+/* Властивість animation-fill-mode */
+.item-9 {
+    width: 100px;
+    height: 100px;
+    background: red;
+    position: relative;
+    animation-name: example3;
+    animation-duration: 3s;  
+    animation-fill-mode: backwards;
+}
+  
+@keyframes example3 {
+    from {top: 0px;}
+    to {top: 200px; background-color: blue;}
+}
+
+/* Існує можливість задання скороченої версії */
+.item-10 {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    animation: myfirst 5s linear 2s infinite alternate;
+}
+  
+@keyframes myfirst {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:200px; top:0px;}
+    50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Пагінація (pagination) - різні варіанти</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <br>
+    <hr>
+    <br>
+    <!-- проста пагінація -->
+    проста пагінація
+    <br>
+    <div class="pagination">
+        <a href="#">&laquo;</a>
+        <a href="#">1</a>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        <a href="#">4</a>
+        <a href="#">5</a>
+        <a href="#">6</a>
+        <a href="#">&raquo;</a>
+        <!-- для створення початкового та кінцевого елементу пагінації, окрім сутностей можна застосувати безпосередні прості значки:
+        <a href="#">❮</a>
+        <a href="#">❯</a> 
+        -->
+    </div>
+    <br>
+    <hr>
+    <br>
+
+    <!-- Активна та наведена пагінація -->
+    Активна та наведена пагінація
+    <br>
+    <br>
+    <div class="center"> <!-- створюємо бокс для можливості центрування або зміни позиціонування усього елементу пагінації -->
+        <div class="pagination-2">
+            <a class="item-2" href="#">&laquo;</a>
+            <a class="item-2" href="#">1</a>
+            <a class="item-2 active" href="#">2</a> <!-- створюємо ефект активносіт для цього піделемента пагінації -->
+            <a class="item-2" href="#">3</a>
+            <a class="item-2" href="#">4</a>
+            <a class="item-2" href="#">5</a>
+            <a class="item-2" href="#">6</a>
+            <a class="item-2" href="#">&raquo;</a>
+        </div>
+    </div>
+    <!-- для задання розриву між піделементами пагінації застосовуємо margin -->
+    <!-- збільшуємо або зменшуємо піделементи пагінації за допомогою font-size або padding -->
+    <br>
+    <hr>
+    
+
+    <!-- Панірувальні сухарі -->
+    Панірувальні сухарі
+    <br>
+    <ul class="breadcrumb">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Pictures</a></li>
+        <li><a href="#">Summer 15</a></li>
+        <li>Italy</li>
+    </ul>
+    
+    <hr>
+    <br>
+</body>
+</html>

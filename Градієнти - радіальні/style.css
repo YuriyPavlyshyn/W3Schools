@@ -1,0 +1,60 @@
+/* звичайний */
+#grad1 {
+    height: 150px;
+    width: 200px;
+    background-color: red; /* Для браузерів, які не підтримують градієнти */
+    background-image: radial-gradient(red, yellow, green);
+}
+
+/* задаємо форму кругу */
+#grad2 {
+    height: 150px;
+    width: 200px;
+    background-color: red; /* Для браузерів, які не підтримують градієнти */
+    background-image: radial-gradient(circle, red, yellow, green);
+}
+
+/* радіальний градієнт із різнорознесеними кольорами */
+#grad3 {
+    height: 150px;
+    width: 200px;
+    background-color: red; /* Для браузерів, які не підтримують градієнти */
+    background-image: radial-gradient(red 5%, yellow 15%, green 60%);
+}
+
+/* властивості для розміщення градієнтів в межах "боксу" */
+#grad4 {
+    height: 150px;
+    width: 150px;
+    background-color: red; /* Для браузерів, які не підтримують градієнти */
+    background-image: radial-gradient(closest-side at 60% 55%, red, yellow, black);
+}
+  
+#grad5 {
+    height: 150px;
+    width: 150px;
+    background-color: red; /* Для браузерів, які не підтримують градієнти */
+    background-image: radial-gradient(farthest-side at 60% 55%, red, yellow, black);
+}
+  
+#grad6 {
+    height: 150px;
+    width: 150px;
+    background-color: red; /* Для браузерів, які не підтримують градієнти */
+    background-image: radial-gradient(closest-corner at 60% 55%, red, yellow, black);
+}
+  
+#grad7 {
+    height: 150px;
+    width: 150px;
+    background-color: red; /* Для браузерів, які не підтримують градієнти */
+    background-image: radial-gradient(farthest-corner at 60% 55%, red, yellow, black);
+}
+
+/* повторення радіального градієнту */
+#grad8 {
+    height: 150px;
+    width: 200px;
+    background-color: red; /* Для браузерів, які не підтримують градієнти */
+    background-image: repeating-radial-gradient(red, yellow 10%, green 15%);
+}

@@ -1,0 +1,75 @@
+/* проста пагінація */
+.pagination {
+    display: inline-block;
+}
+  
+.pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+/* Активна та наведена пагінація */
+.center {
+    position: absolute;
+    top: 19%;
+    left: 42%;
+    transform: translate(-50%, -50%);
+    /* або застосовуємо text-align: center; для відцентрування цілого елементу пагінації*/
+}
+
+.pagination-2 {
+    display: inline-block;
+}
+  
+.pagination-2 .item-2 {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color 1.3s; /* плавність переходу для бекграунду */
+    border: 1px solid #ddd; /* створюємо чіткі рамки для піделементів пагінації */
+    margin: 0 1px; /* для розриву між піделементами пагінації */
+}
+  
+.pagination-2 a.active {
+    background-color: #4CAF50;
+    /* border-radius: 5px; */ /* задаємо радіус для кутів */
+    color: white;
+    border: 1px solid #ddd;
+}
+  
+.pagination-2 .item-2:hover:not(.active) {
+    background-color: #ddd;
+    border-radius: 5px;
+}
+
+.pagination-2 .item-2:first-child { /* заокруглені рамки для першого обєкту */
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+  
+.pagination-2 .item-2:last-child { /* заокруглені рамки для останнього обєкту */
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+/* Панірувальні сухарі */
+ul.breadcrumb {
+    padding: 8px 16px;
+    list-style: none;
+    background-color: #eee;
+}
+  
+ul.breadcrumb li {display: inline;}
+  
+ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: black;
+    content: "/\00a0";
+}
+  
+ul.breadcrumb li a {
+    color: green;
+}
